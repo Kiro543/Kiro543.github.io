@@ -1,0 +1,22 @@
+<h1>
+Welcome to CSS in the DARK
+</h1>
+<div id="primo">
+<p class="testo">Sono largo 250 px,bordi 10 px</p>
+</div>
+<br>
+<div id="secondo">
+<p class="testo">Sono largo 250 px,spostami!</p>
+</div>
+<head>
+    <style>
+    div {
+      background-color: white;
+      width: 250px;
+      border: 10px solid green;
+      padding: 50px;
+      margin: 20px;
+    }
+    </style>
+    </head>
+    <body>
