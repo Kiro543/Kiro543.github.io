@@ -1,8 +1,12 @@
- <body>
-	 <title>ZOO della 1F</title>
+ <html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOO della 1F</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            text-align: center;
         }
         h1 {
             font-size: 28px;
@@ -14,26 +18,41 @@
             background-color: lightblue;
             margin: 20px 0;
         }
-        .zoo-container {
-            text-align: center;
-        }
         .guardian {
             font-size: 18px;
+            margin: 20px;
         }
         .animals-list {
             font-size: 18px;
+            list-style: none;
+            padding: 0;
+        }
+        .animals-list li {
+            font-size: 22px;
+            margin: 5px 0;
+        }
+        .zoo-layout {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            font-size: 35px;
         }
         .enclosure {
-            display: inline-block;
+            display: flex;
+            justify-content: center;
             border: 2px dashed black;
             padding: 10px;
-            margin: 10px;
+            width: fit-content;
+            font-size: 35px;
         }
         .tiger-cage {
             width: 340px;
-        }
-        .tree {
-            font-size: 35px;
         }
     </style>
 </head>
@@ -46,28 +65,29 @@
         <li>2 🦊</li>
     </ul>
     <div class="sky"></div>
-    <div class="zoo-container">
-        <p class="guardian">💂 Ciao sono il guardiano!</p>
-        <p>I nostri alberi sono alti 35px; la gabbia delle 🐯 è larga circa 340px!!<br>
-        Oggi il cielo è light blue.</p>
-        
-        <div>
-            🌴🌲🌳🌴🌲🌳🌲🌳🌲🌴
+    <p class="guardian">👮‍♂️ Ciao sono il guardiano!</p>
+    <p>I nostri alberi sono alti 35px; la gabbia delle 🐯 è larga circa 340px!!<br>
+    Oggi il cielo è light blue.</p>
+    
+    <div class="zoo-layout">
+        <div class="row">
+            🌴🌲🌳🌲🌴 🌲🌳🌲🌴
         </div>
         <div class="enclosure tiger-cage">
             🐯🐯🐯🐯🐯
         </div>
-        <div>
-            🌴🌲🌳🌴🌲🌳🌲🌳🌲🌴
+        <div class="row">
+            🌴🌲🌳🌲🌴 🌲🌳🌲🌴
         </div>
         <div class="enclosure">
             🐘🐘🐘
         </div>
-        <div>
-            🌴🌲🌳🌴🌲🌳🌲🌳🌲🌴
+        <div class="row">
+            🌴🌲🌳🌲🌴 🌲🌳🌲🌴
         </div>
         <div class="enclosure">
             🦊🦊
         </div>
     </div>
 </body>
+</html>
