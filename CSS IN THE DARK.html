@@ -1,33 +1,38 @@
-<h1>
-Welcome to CSS in the DARK
-</h1>
-<div id="primo">
-<p class="testo">Sono largo 250 px,bordi 10 px</p>
-</div>
-<br>
-<div id="secondo">
-<p class="testo">Sono largo 250 px,spostami!</p>
-</div>
+<html lang="it">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS in the DARK</title>
     <style>
-     #primo{
-      background-color: white;
-      width: 250px;
-      border: 10px solid green;
-      padding: 50px;
-      margin: 20px;
-    }
+        body {
+            font-family: serif;
+            background-color: white;
+            text-align: left;
+            padding: 50px;
+        }
+        h1 {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 32px;
+            color: blue;
+        }
+        .box {
+            width: 25…     .movable {
+            background-color: black;
+            color: white;
+            width: 250px;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-left: 150px;
+        }
     </style>
-    </head>
-    <body>
-        <head>
-    <style>
-     #secondo{
-      background-color: black;
-      width: 1px;
-    border:1px;
-      margin: 250px;
-    }
-    </style>
-    </head>
-    <body>
+</head>
+<body>
+    <p>Obbiettivo</p>
+    <h1>Welcome to CSS in the DARK!</h1>
+    <div class="box"><span>Sono largo 250px, bordi 10px</span></div>
+    <div class="movable">Sono largo 250px, spostami!</div>
+</body>
+</html>
