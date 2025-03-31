@@ -1,99 +1,120 @@
-<body>
-    <h1>Benvenuto presso lo ZOO della 1F</h1>
-    <p>In questo zoo si trovano i seguenti animali:</p>
-    <ul class="animals-list">
-        <li>5 🐯</li>
-        <li>3 🐘</li>
-        <li>2 🦊</li>
-    </ul>
-    <div class="sky"></div>
-    <p class="guardian">💂</p>
-    <p> Ciao sono il guardiano!
-    I nostri alberi sono alti 35px; la gabbia delle 🐯 è larga circa 340px!!<br>
-    Oggi il cielo è light blue.</p>
-    
-    <div class="zoo-layout">
-        <div class="row">
-            🌴🌳🌲<div class="sky2"></div> 🌲🌴🌳🌲<br>
-            🌴🌳🌲                         🌲🌴🌳🌲<br>
-        </div>
-        <div class="enclosure tiger-cage">
-            🐯🐯🐯🐯🐯
-        </div>
-        <div class="row">
-            🌴🌳🌲<div class="sky2"></div> 🌲🌴🌳🌲<br>
-            🌴🌳🌲                         🌲🌴🌳🌲<br>
-        </div>
-        <div class="enclosure">
-            🐘🐘🐘
-        </div>
-        <div class="row">
-            🌴🌳🌲<div class="sky2"></div> 🌲🌴🌳🌲<br>
-            🌴🌳🌲                         🌲🌴🌳🌲<br>
-        </div>
-        <div class="enclosure">
-            🦊🦊
-        </div>
-    </div>
-</body>
-<head>
-    
+<h1>Bevenuto presso lo ZOO della 1F</h1>
+<span>In questo zoo si trovano i seguenti animali</span>
+<ul>
+	<li>5 🐯</li>
+	<li>3 🐘​</li>
+	<li>2 🦊​</li>
+</ul>
+<div id="zoo">
+	<div id="guardiola">
+		<span id="guardian">💂</span>
+		<p>Ciao sono il guardiano!<br />I nostri alberi sono alti 35px; la gabbia delle 🐯 è larga circa 340px​!!<br />Oggi il cielo è light blue.</p>
+	</div>
+	<div class="forest">🌴​🌳​🌲​<span class="road">​</span>🌲​🌴​🌳​🌲​🌴​🌳​🌲​<span class="road"></span>​🌲​🌴​🌳​🌲​</div>
+	<div class="recinto tiger">
+		<span class="tiger uno">🐯</span>
+		<span class="tiger due">🐯</span>
+		<span class="tiger tre">🐯</span>
+		<span class="tiger quattro">🐯</span>
+		<span class="tiger cinque">🐯</span>
+	</div>
+	<div class="forest">🌴​🌳​🌲​<span class="road"></span>🌲​🌴​🌳​🌲​🌴​🌳​🌲​<span class="road"></span>​🌲​🌴​🌳​🌲​</div>
+	<div class="recinto elephant">
+		<span class="elephant uno">🐘​</span>
+		<span class="elephant due">🐘​</span>
+		<span class="elephant tre">🐘​</span>
+	</div>
+	<div class="forest">🌴​🌳​🌲​<span class="road"></span>🌲​🌴​🌳​🌲​🌴​🌳​🌲​<span class="road"></span>​🌲​🌴​🌳​🌲​</div>
+	<div class="recinto fox">
+		<span class="fox uno">🦊​</span>
+		<span class="fox due">🦊​​</span>
+	</div>
+</div>
+<style>
+#guardian{
+	font-size: 100px;
+	margin-top: 27px;
+	
+	
+}
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-           
-        }
-        h1 {
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .sky {
-            width: 100%;
-            height: 50px;
-            background-color: lightblue;
-            margin: 20px 0;
-        }
-        .guardian {
-            font-size: 100px;
-            margin: 20px;
-        }
-        .animals-list {
-            font-size: 18px;
-            list-style: none;
-            padding: 0;
-        }
-        .animals-list li {
-            font-size: 22px;
-            margin: 5px 0;
-        }
-        .zoo-layout {
-            display: flex;
-            flex-direction: column;
-          
-            gap: 10px;
-        }
-        .row {
-            display: flex;
-           
-            gap: 10px;
-            font-size: 35px;
-        }
-        .enclosure {
-            display: flex;
-            justify-content: center;
-            border: 2px dashed black;
-            padding: 10px;
-            width: fit-content;
-            font-size: 35px;
-        }
-        .tiger-cage {
-            width: 340px;
-        }
-         .sky2 {
-  width: 50px;
-  height: 150px;  
-  padding: 50px;
-  background-color:#b3b3b3
-    </style>
-</head>
+#zoo{
+background-color: lightblue;
+width: 100%;
+height: 30px;
+
+
+}
+.forest {
+font-size: 34px;
+margin-top: 10px;
+right: 5px;
+border: transparent  ;
+height: 70px;
+width: 350px;
+
+
+
+}
+.recinto {
+
+	border: dashed gray ;
+	border-width: 1px;
+	width: 350px;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.tiger{
+
+	font-size: 10px;
+}
+.tiger.uno { 
+	font-size: 35px;
+}
+.tiger.tre { 
+	font-size: 35px;
+}
+.road{
+	border: solid gray ;
+	border-width: 10px;
+	
+	
+
+
+}
+.recinto {
+
+border: dashed gray ;
+border-width: 1px;
+width: 350px;
+text-align: center;
+margin-top: 33x;
+padding: 0px;
+}
+.elephant{
+
+font-size: 10px;
+}
+.elephant.uno { 
+font-size: 35px;
+}
+.elephant.tre { 
+font-size: 35px;
+}
+
+.recinto {
+
+border: dashed gray ;
+border-width: 1px;
+width: 350px;
+text-align: center;
+margin-top: 33x;
+padding: 0px;
+}
+
+
+
+
+
+</style>
