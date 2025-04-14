@@ -10,7 +10,7 @@
   line-height: 1.6;
 }
 
-/* Titoli principali */
+
 h1 {
   color: #003366;
   font-size: 32px;
@@ -18,21 +18,18 @@ h1 {
   padding-bottom: 10px;
 }
 
-/* Titoli sezioni */
 h2 {
   color: #004080;
   font-size: 26px;
   margin-top: 30px;
 }
 
-/* Sottotitoli */
 h3 {
   color: #006699;
   font-size: 20px;
   margin-top: 20px;
 }
 
-/* Contenitori delle sezioni */
 section {
   background-color: #ffffff;
   padding: 25px;
@@ -45,66 +42,80 @@ section {
 </head>
 <body>
 
-  <h1>Capitolo 2: Componenti del Computer</h1>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capitolo 2 - Componenti del Computer</title>
+  <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+
+  <header>
+    <h1>Capitolo 2: Componenti del Computer</h1>
+    <p>In questo capitolo esploreremo in dettaglio i principali componenti hardware e software di un computer, esaminando le loro caratteristiche, funzioni, e la loro evoluzione nel tempo.</p>
+  </header>
 
   <section>
-    <h2>1) Hardware</h2>
-    <p>L'hardware è l'insieme delle parti fisiche e tangibili del computer. Comprende tutto ciò che possiamo toccare: circuiti, schede, periferiche, cavi, ecc.</p>
-
+    <h2>1. Hardware: La Parte Fisica del Computer</h2>
+    <p>L'hardware comprende tutti i dispositivi fisici che permettono a un computer di funzionare. Senza l'hardware, il computer non sarebbe in grado di eseguire nessuna operazione. Esploreremo i principali componenti hardware, suddivisi in diverse categorie.</p>
+    
     <h3>a) Schede</h3>
+    <p>Le schede madri e le schede di espansione sono il cuore dell'hardware di un computer. Ogni componente hardware è collegato a queste schede per poter comunicare e interagire con gli altri dispositivi. Di seguito sono riportate le principali schede all'interno di un computer:</p>
     <ul>
-      <li><strong>Scheda madre (motherboard):</strong> il cuore del computer, dove si collegano tutte le altre componenti.</li>
-      <li><strong>Scheda video (GPU):</strong> elabora i dati grafici e permette di visualizzare immagini e video.</li>
-      <li><strong>Scheda audio:</strong> gestisce l’output sonoro.</li>
-      <li><strong>Altre schede:</strong> come le schede di rete o Wi-Fi per la connessione a internet.</li>
+      <li><strong>Scheda madre (Motherboard):</strong> È la principale scheda su cui sono montati tutti gli altri componenti. Contiene il chipset che gestisce la comunicazione tra la CPU, la RAM, le schede video e di rete, le periferiche e le unità di archiviazione. La scheda madre ha anche slot per schede di espansione (come la scheda video o la scheda audio) e connettori per le periferiche come USB, porte audio, HDMI, ecc.</li>
+      <li><strong>Scheda video (GPU):</strong> La scheda grafica è responsabile per la gestione della grafica e dei video. Le GPU moderne sono sempre più potenti e vengono utilizzate anche per il calcolo parallelo in ambiti come l'intelligenza artificiale e il deep learning. Le schede video più avanzate sono dotate di numerosi core di elaborazione che consentono una gestione efficiente dei compiti grafici e computazionali.</li>
+      <li><strong>Scheda audio:</strong> La scheda audio gestisce la produzione e la registrazione del suono all'interno del computer. Esistono schede audio integrate nella scheda madre o dedicate, che offrono una qualità sonora superiore. Le schede audio moderne sono in grado di gestire una vasta gamma di formati audio e di fornire uscite per casse acustiche, cuffie, e microfoni.</li>
+      <li><strong>Scheda di rete (NIC):</strong> Le schede di rete consentono al computer di connettersi a una rete locale (LAN) o a Internet. Le schede di rete moderne supportano connessioni cablate (Ethernet) o senza fili (Wi-Fi), con velocità di trasferimento dati che variano in base al tipo di scheda e alla tecnologia utilizzata.</li>
     </ul>
-
+    
     <h3>b) Cavi</h3>
+    <p>I cavi sono necessari per collegare i componenti fisici del computer. Ogni cavo ha una funzione specifica e può essere utilizzato per trasferire segnali elettrici, dati o alimentazione. Alcuni dei cavi più comuni sono:</p>
     <ul>
-      <li><strong>Cavi di alimentazione:</strong> portano energia al computer.</li>
-      <li><strong>Cavi dati:</strong> come USB, HDMI, Ethernet, per trasferire informazioni.</li>
+      <li><strong>Cavo di alimentazione:</strong> È il cavo che fornisce energia al computer. Può essere collegato alla fonte di alimentazione del PC o alla batteria di un laptop.</li>
+      <li><strong>Cavo USB:</strong> I cavi USB sono utilizzati per collegare dispositivi come tastiere, mouse, stampanti, e altri dispositivi di input/output. Esistono diverse versioni di cavi USB (USB 2.0, USB 3.0, USB-C), ognuna con una velocità di trasferimento dati maggiore rispetto alla precedente.</li>
+      <li><strong>Cavo HDMI:</strong> Il cavo HDMI è utilizzato per connettere il computer a monitor, TV o proiettori per la visualizzazione di contenuti video e audio di alta qualità.</li>
+      <li><strong>Cavo Ethernet:</strong> È un cavo utilizzato per connettere il computer a una rete cablata, garantendo una connessione Internet stabile e veloce.</li>
     </ul>
 
-    <h3>c) Periferiche</h3>
-    <p>Le periferiche sono dispositivi esterni collegati al computer.</p>
-    <ul class="input-output-list">
-      <li><strong>Input:</strong> tastiera, mouse, scanner, microfono.</li>
-      <li><strong>Output:</strong> monitor, stampante, casse.</li>
-      <li><strong>Input e Output:</strong> touchscreen, cuffie con microfono, chiavette USB.</li>
+    <h3>c) Periferiche (Input, Output, Input/Output)</h3>
+    <p>Le periferiche sono dispositivi esterni che si collegano al computer per estenderne le capacità. Le periferiche possono essere classificate in base alla loro funzione: input, output e input/output.</p>
+    <ul>
+      <li><strong>Periferiche di input:</strong> Questi dispositivi permettono all'utente di inserire dati nel computer. Esempi comuni sono la tastiera, il mouse, il microfono e la webcam.</li>
+      <li><strong>Periferiche di output:</strong> Le periferiche di output forniscono informazioni all'utente. Esempi includono il monitor, le casse acustiche e le stampanti.</li>
+      <li><strong>Periferiche di input/output:</strong> Alcuni dispositivi possono sia ricevere che inviare dati. Esempi di queste periferiche sono il touchscreen, che consente all'utente di interagire sia con l'input che con l'output tramite un unico dispositivo.</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>2) Software</h2>
-    <p>Il software è l’insieme dei programmi e istruzioni che permettono all’hardware di funzionare. È la parte "intelligente" del computer.</p>
-
+    <h2>2. Software: La Parte Intangibile del Computer</h2>
+    <p>Il software è l'insieme di programmi e applicazioni che permettono di eseguire operazioni specifiche sul computer. Esistono diversi tipi di software, ognuno con una funzione ben precisa.</p>
+    
     <h3>a) Firmware</h3>
-    <p>È un software "di base" installato direttamente sull’hardware. Controlla funzioni fondamentali del dispositivo, come l’avvio (BIOS/UEFI).</p>
+    <p>Il firmware è un tipo di software che è incorporato direttamente nell'hardware di un dispositivo. Viene utilizzato per controllare e gestire il comportamento di dispositivi hardware specifici, come le schede madri, le schede di rete e le periferiche. A differenza dei normali programmi, il firmware è difficilmente modificabile dall'utente e viene spesso aggiornato dal produttore del dispositivo per migliorarne le prestazioni o correggere errori.</p>
 
     <h3>b) Sistemi Operativi</h3>
-    <p>Gestiscono tutte le risorse del computer e permettono di interagire con esso. Esempi comuni sono:</p>
+    <p>I sistemi operativi (OS) sono i programmi principali che permettono al computer di funzionare, gestire risorse e interagire con l'utente. Ogni computer ha un sistema operativo che si occupa di gestire le operazioni di base, come l'esecuzione di programmi, la gestione dei file e l'interfacciamento con le periferiche.</p>
     <ul>
-      <li>Windows</li>
-      <li>macOS</li>
-      <li>Linux</li>
-      <li>Android (per dispositivi mobili)</li>
+      <li><strong>Windows:</strong> Un sistema operativo sviluppato da Microsoft, conosciuto per la sua compatibilità con una vasta gamma di hardware e software. È uno dei sistemi operativi più utilizzati al mondo.</li>
+      <li><strong>macOS:</strong> Il sistema operativo di Apple, progettato per i computer Mac. È noto per la sua interfaccia utente elegante e la stretta integrazione con l'hardware Apple.</li>
+      <li><strong>Linux:</strong> Un sistema operativo open source che è utilizzato principalmente da sviluppatori e professionisti IT. Esistono diverse distribuzioni di Linux, tra cui Ubuntu, Fedora e Debian, ciascuna adatta a particolari esigenze.</li>
+      <li><strong>Android/iOS:</strong> Sistemi operativi mobili utilizzati su smartphone e tablet. Android è open-source, mentre iOS è sviluppato da Apple per dispositivi come iPhone e iPad.</li>
     </ul>
 
     <h3>c) Applicazioni</h3>
-    <p>Programmi installati dall’utente per svolgere compiti specifici:</p>
+    <p>Le applicazioni sono programmi software che permettono di eseguire compiti specifici, come navigare sul web, scrivere documenti o modificare immagini. Le applicazioni possono essere di vari tipi, come applicazioni desktop, applicazioni web o applicazioni mobili.</p>
     <ul>
-      <li>Browser web (es. Chrome, Firefox)</li>
-      <li>Editor di testo (es. Word, Google Docs)</li>
-      <li>Software di grafica (es. Photoshop)</li>
-      <li>Giochi, app educative, social network...</li>
+      <li><strong>Applicazioni di produttività:</strong> Come Microsoft Word, Excel e Google Docs, che permettono di creare e modificare documenti, fogli di calcolo e presentazioni.</li>
+      <li><strong>Applicazioni multimediali:</strong> Come lettori video e audio (VLC, iTunes), software di editing grafico (Photoshop, GIMP), e programmi di editing video (Premiere Pro, Final Cut Pro).</li>
+      <li><strong>Applicazioni web:</strong> Programmi che funzionano direttamente su un browser web, come Google Drive, Slack e Facebook, senza la necessità di essere installati sul computer.</li>
+      <li><strong>Applicazioni mobili:</strong> App progettate per smartphone e tablet, come WhatsApp, Instagram, e Google Maps.</li>
     </ul>
+
   </section>
+
+  <footer>
+    <p>© 2025. Tutti i diritti riservati. Tutti i contenuti sono a scopo educativo.</p>
+  </footer>
 
 </body>
 </html>
-
- 
-
-
-
-
