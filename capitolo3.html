@@ -1,122 +1,177 @@
 <h1 id="CAPITOLO3">CAPITOLO 3: CODIFICHE</h1>
-  <a href="indice.html">Vai alla pagina indice</a><br><br>
+<a href="indice.html">Vai alla pagina indice</a><br><br>
 
-  <!-- Link interni -->
-  <strong>LINK INTERNI</strong><br>
-  <a href="#CARATTERI">1) Codifica dei caratteri</a><br>
-  <a href="#IMMAGINI">2) Codifica delle immagini</a><br>
-  <a href="#VIDEO">3) Codifica dei video</a><br>
-  <a href="#AUDIO">4) Codifica dell’audio</a><br>
-  <a href="#NUMERI">5) Codifica dei numeri (N, Z, R)</a><br><br>
+<!-- Link interni -->
+<strong>LINK INTERNI</strong><br>
+<a href="#CARATTERI">1) Codifica dei caratteri</a><br>
+<a href="#IMMAGINI">2) Codifica delle immagini</a><br>
+<a href="#VIDEO">3) Codifica dei video</a><br>
+<a href="#AUDIO">4) Codifica dell’audio</a><br>
+<a href="#NUMERI">5) Codifica dei numeri (N, Z, R)</a><br><br>
 
-  <h2>Introduzione</h2>
-  <p>I computer utilizzano la codifica binaria per rappresentare e gestire tutte le informazioni. Questo perché il sistema elettronico dei computer si basa su due soli stati: acceso (1) e spento (0). Per rappresentare informazioni complesse, vengono utilizzati sistemi di numerazione posizionale, come il binario (base 2), l’ottale (base 8), l’esadecimale (base 16) e il decimale (base 10).</p>
+<h2>Introduzione</h2>
+<p>
+  La codifica è il processo mediante il quale le informazioni vengono trasformate in una forma comprensibile e manipolabile da parte dei computer. Poiché i computer lavorano esclusivamente con segnali binari (0 e 1), tutte le informazioni — testi, immagini, suoni, numeri — devono essere convertite in sequenze binarie. Questa trasformazione si basa su concetti matematici e standard di rappresentazione chiamati codifiche.
+</p>
 
-  <hr>
+<hr>
 
-  <!-- Paragrafo 1: Codifica dei caratteri -->
-  <h2 id="CARATTERI">1) Codifica dei caratteri</h2>
-  <p>I testi, che siano lettere, numeri o simboli, devono essere tradotti in numeri che il computer può comprendere. La codifica dei caratteri è proprio questo processo.</p>
+<!-- Paragrafo 1: Codifica dei caratteri -->
+<h2 id="CARATTERI">1) Codifica dei caratteri</h2>
+<p>
+  La codifica dei caratteri è necessaria per rappresentare testo all’interno di un sistema informatico. Ogni carattere (lettera, numero, simbolo) è associato a un valore numerico che il computer può interpretare.
+</p>
 
-  <h3>Codice ASCII</h3>
-  <p>Il codice ASCII (American Standard Code for Information Interchange) rappresenta 128 caratteri, ciascuno associato a un numero tra 0 e 127. Ad esempio:</p>
-  <ul>
-    <li>"A" = 65</li>
-    <li>"a" = 97</li>
-    <li>"1" = 49</li>
-    <li>"@" = 64</li>
-  </ul>
+<h3>Codice ASCII</h3>
+<p>
+  Il codice ASCII (American Standard Code for Information Interchange) è uno dei primi schemi di codifica dei caratteri. Utilizza 7 bit per rappresentare 128 simboli, tra cui lettere maiuscole e minuscole, numeri e simboli speciali. Esistono anche versioni estese a 8 bit (ASCII esteso) che permettono di includere caratteri accentati e simboli grafici.
+</p>
+<ul>
+  <li>"A" = 65</li>
+  <li>"a" = 97</li>
+  <li>"1" = 49</li>
+  <li>"@" = 64</li>
+</ul>
 
-  <h3>Codifica Unicode</h3>
-  <p>Il codice Unicode estende il numero di simboli rappresentabili, includendo caratteri di tutte le lingue del mondo, simboli matematici, emoji, ecc. È compatibile con ASCII ma può usare fino a 4 byte per carattere (UTF-8, UTF-16).</p>
+<h3>Codifica Unicode</h3>
+<p>
+  Unicode è uno standard più avanzato e universale, capace di rappresentare oltre 1 milione di caratteri appartenenti a praticamente tutte le lingue del mondo, oltre a simboli matematici, emoji e caratteri speciali. Le principali implementazioni sono:
+</p>
+<ul>
+  <li><strong>UTF-8</strong>: compatto, usa 1–4 byte. Retrocompatibile con ASCII.</li>
+  <li><strong>UTF-16</strong>: usa 2 o 4 byte.</li>
+  <li><strong>UTF-32</strong>: usa sempre 4 byte per carattere.</li>
+</ul>
 
-  <img src="ascii.jpeg" alt="Tabella ASCII"> <img src="unicode.jpeg" alt="Unicode"><br>
-  <a href="#CAPITOLO3">Torna a CAPITOLO 3</a><br><br>
+<img src="ascii.jpeg" alt="Tabella ASCII"> <img src="unicode.jpeg" alt="Unicode"><br>
+<a href="#CAPITOLO3">Torna a CAPITOLO 3</a><br><br>
 
-  <!-- Paragrafo 2: Codifica delle immagini -->
-  <h2 id="IMMAGINI">2) Codifica delle immagini</h2>
-  <p>Le immagini sono rappresentate come una griglia di pixel, dove ciascun pixel ha un colore codificato numericamente.</p>
+<!-- Paragrafo 2: Codifica delle immagini -->
+<h2 id="IMMAGINI">2) Codifica delle immagini</h2>
+<p>
+  Le immagini digitali sono costituite da una matrice di pixel. Ogni pixel rappresenta un punto dell’immagine e contiene informazioni sul colore. Il colore è codificato numericamente attraverso vari modelli, tra cui il più diffuso è RGB.
+</p>
 
-  <h3>Codifica RGB</h3>
-  <p>Ogni pixel è composto da tre valori (Red, Green, Blue), ciascuno da 0 a 255. Esempio: RGB(255, 0, 0) è rosso puro.</p>
+<h3>Codifica RGB</h3>
+<p>
+  RGB è un modello additivo che usa tre componenti: Rosso, Verde e Blu. Ogni colore ha un valore da 0 a 255. Un pixel è descritto quindi da una tripletta, es. <code>RGB(0, 255, 0)</code> per il verde puro. Esistono anche altri modelli come CMYK, HSL e YCbCr.
+</p>
 
-  <h3>Formati di file</h3>
-  <ul>
-    <li><strong>JPEG</strong>: compressione lossy, ottimo per foto.</li>
-    <li><strong>PNG</strong>: compressione lossless, ideale per grafica con trasparenze.</li>
-    <li><strong>GIF</strong>: adatto per animazioni semplici, massimo 256 colori.</li>
-  </ul>
+<h3>Formati di file</h3>
+<ul>
+  <li><strong>JPEG</strong>: compressione lossy, ottimo per foto. Riduce la dimensione eliminando dettagli non percepibili dall’occhio umano.</li>
+  <li><strong>PNG</strong>: compressione lossless, mantiene la qualità originale. Supporta trasparenza (canale alfa).</li>
+  <li><strong>GIF</strong>: supporta animazioni e 256 colori. Usato per grafica semplice e loop animati.</li>
+  <li><strong>BMP</strong>: formato semplice, non compresso. Di grandi dimensioni.</li>
+  <li><strong>SVG</strong>: grafica vettoriale, basata su XML. Ideale per icone e loghi scalabili.</li>
+</ul>
 
-  <h3>Compressione</h3>
-  <ul>
-    <li><strong>Lossy</strong>: riduce la qualità per risparmiare spazio.</li>
-    <li><strong>Lossless</strong>: mantiene intatta la qualità originale.</li>
-  </ul>
+<h3>Compressione</h3>
+<ul>
+  <li><strong>Lossy</strong>: come JPEG, perde parte dei dati. Più efficiente.</li>
+  <li><strong>Lossless</strong>: come PNG, conserva tutti i dati.</li>
+</ul>
 
-  <img src="immagine informatica.jpeg" alt="Codifica immagini"> <img src="codifica immagini.jpeg" alt="Esempio RGB"><br>
-  <a href="#CAPITOLO3">Torna a CAPITOLO 3</a><br><br>
+<img src="immagine informatica.jpeg" alt="Codifica immagini"> <img src="codifica immagini.jpeg" alt="Esempio RGB"><br>
+<a href="#CAPITOLO3">Torna a CAPITOLO 3</a><br><br>
 
-  <!-- Paragrafo 3: Codifica dei video -->
-  <h2 id="VIDEO">3) Codifica dei video</h2>
-  <p>I video sono una sequenza di immagini (frame) con audio sincronizzato. La codifica video comprime e ottimizza questi dati per permettere la riproduzione fluida e l’archiviazione efficiente.</p>
+<!-- Paragrafo 3: Codifica dei video -->
+<h2 id="VIDEO">3) Codifica dei video</h2>
+<p>
+  Un video digitale è una sequenza di immagini (frame) mostrate in rapida successione (es. 24 o 60 al secondo), spesso accompagnate da audio. A causa dell’enorme quantità di dati, viene applicata una codifica video che comprime i frame, riducendo la ridondanza spaziale (immagine) e temporale (tra fotogrammi).
+</p>
 
-  <h3>Codec video</h3>
-  <ul>
-    <li><strong>H.264</strong>: standard più usato, ottimo rapporto qualità/dimensione.</li>
-    <li><strong>H.265</strong>: maggiore compressione, usato per il 4K.</li>
-    <li><strong>VP9 e AV1</strong>: alternativi open-source per lo streaming.</li>
-  </ul>
+<h3>Codec video</h3>
+<p>I codec sono algoritmi che codificano (compressano) e decodificano (decompressano) i dati video.</p>
+<ul>
+  <li><strong>H.264 (AVC)</strong>: ottimo compromesso tra qualità e dimensione.</li>
+  <li><strong>H.265 (HEVC)</strong>: maggiore compressione, usato per 4K e 8K.</li>
+  <li><strong>VP9</strong>: alternativa open source sviluppata da Google, usata da YouTube.</li>
+  <li><strong>AV1</strong>: nuovo codec open-source, ancora più efficiente.</li>
+</ul>
 
-  <h3>Formati</h3>
-  <ul>
-    <li>.mp4, .avi, .mov, .webm</li>
-  </ul>
+<h3>Formati</h3>
+<p>Il contenitore video racchiude video, audio, sottotitoli, metadati:</p>
+<ul>
+  <li><code>.mp4</code>: supporta H.264, molto diffuso.</li>
+  <li><code>.avi</code>: vecchio formato, poco efficiente.</li>
+  <li><code>.mov</code>: formato Apple, alta qualità.</li>
+  <li><code>.webm</code>: formato moderno per il web.</li>
+</ul>
 
-  <img src="codifica video 1.jpeg" alt="Codifica video"> <img src="codifica video 2.jpeg" alt="Compressione video"><br>
-  <a href="#CAPITOLO3">Torna a CAPITOLO 3</a><br><br>
+<img src="codifica video 1.jpeg" alt="Codifica video"> <img src="codifica video 2.jpeg" alt="Compressione video"><br>
+<a href="#CAPITOLO3">Torna a CAPITOLO 3</a><br><br>
 
-  <!-- Paragrafo 4: Codifica audio -->
-  <h2 id="AUDIO">4) Codifica dell’audio</h2>
-  <p>L’audio analogico viene digitalizzato tramite il processo di campionamento e quantizzazione.</p>
+<!-- Paragrafo 4: Codifica audio -->
+<h2 id="AUDIO">4) Codifica dell’audio</h2>
+<p>
+  L’audio analogico (suoni reali) viene convertito in digitale tramite <strong>campionamento</strong> e <strong>quantizzazione</strong>.
+</p>
 
-  <h3>Campionamento</h3>
-  <p>Frequenza di campionamento: numero di campioni per secondo, espressa in Hz. (es. 44.100 Hz nei CD).</p>
+<h3>Campionamento</h3>
+<p>
+  È il processo di misurazione dell’ampiezza del suono a intervalli regolari. Più è alta la frequenza di campionamento, maggiore è la fedeltà del suono. Standard:
+</p>
+<ul>
+  <li><strong>CD audio</strong>: 44.100 Hz</li>
+  <li><strong>DVD audio</strong>: 48.000 Hz</li>
+  <li><strong>Hi-Res</strong>: 96.000 Hz o superiore</li>
+</ul>
 
-  <h3>Profondità di bit</h3>
-  <p>Indica quanti bit vengono usati per rappresentare ogni campione. Più bit, maggiore qualità.</p>
+<h3>Profondità di bit</h3>
+<p>
+  Indica quanti bit rappresentano ciascun campione. Aumentare i bit consente una maggiore gamma dinamica:
+</p>
+<ul>
+  <li>16 bit: standard CD</li>
+  <li>24 bit: audio professionale</li>
+</ul>
 
-  <h3>Formati audio</h3>
-  <ul>
-    <li><strong>Lossy</strong>: MP3, AAC</li>
-    <li><strong>Lossless</strong>: FLAC, ALAC</li>
-    <li><strong>Non compressi</strong>: WAV, AIFF</li>
-  </ul>
+<h3>Formati audio</h3>
+<ul>
+  <li><strong>Lossy</strong>: <code>MP3</code>, <code>AAC</code> – alta compressione, perdita di qualità.</li>
+  <li><strong>Lossless</strong>: <code>FLAC</code>, <code>ALAC</code> – qualità originale preservata.</li>
+  <li><strong>Non compressi</strong>: <code>WAV</code>, <code>AIFF</code> – file grandi, nessuna compressione.</li>
+</ul>
 
-  <img src="codifica audio 1.jpeg" alt="Codifica audio"> <img src="codifica audio 2.jpeg" alt="Formati audio"><br>
-  <a href="#CAPITOLO3">Torna a CAPITOLO 3</a><br><br>
+<img src="codifica audio 1.jpeg" alt="Codifica audio"> <img src="codifica audio 2.jpeg" alt="Formati audio"><br>
+<a href="#CAPITOLO3">Torna a CAPITOLO 3</a><br><br>
 
-  Paragrafo 5: Codifica dei numeri 
-  <h2 id="NUMERI">5) Codifica dei numeri (N, Z, R)</h2>
-  <p>I numeri devono essere convertiti in binario per essere gestiti dal computer.</p>
+<!-- Paragrafo 5: Codifica dei numeri -->
+<h2 id="NUMERI">5) Codifica dei numeri (N, Z, R)</h2>
+<p>
+  I numeri devono essere convertiti in binario affinché il computer possa eseguire operazioni matematiche. Esistono vari modi per rappresentare diversi tipi di numeri.
+</p>
 
-  <h3>Numeri Naturali (N)</h3>
-  <p>Vengono rappresentati in binario puro. Esempio: 5 = 101</p>
+<h3>Numeri Naturali (N)</h3>
+<p>
+  Rappresentati in <strong>binario puro</strong>. Ogni numero è una sequenza di bit. Esempio: 13 in binario = <code>1101</code>.
+</p>
 
-  <h3>Numeri Interi (Z)</h3>
-  <p>Si usa la codifica in complemento a due per rappresentare anche i numeri negativi.</p>
+<h3>Numeri Interi (Z)</h3>
+<p>
+  Per includere i numeri negativi, si usa la <strong>codifica in complemento a due</strong>, che permette di rappresentare valori positivi e negativi con lo stesso hardware.
+</p>
+<p>Esempio: in 8 bit, +5 = <code>00000101</code>, -5 = <code>11111011</code>.</p>
 
-  <h3>Numeri Razionali e Reali (Q, R)</h3>
-  <p>Si utilizzano le rappresentazioni in virgola fissa o virgola mobile (come IEEE 754) per supportare decimali e grandi valori.</p>
+<h3>Numeri Razionali e Reali (Q, R)</h3>
+<p>
+  I numeri con la virgola vengono rappresentati tramite:
+</p>
+<ul>
+  <li><strong>Virgola fissa</strong>: posizione della virgola è fissa, meno flessibile.</li>
+  <li><strong>Virgola mobile</strong>: come lo standard <code>IEEE 754</code>, consente di rappresentare numeri molto grandi o piccoli.</li>
+</ul>
 
-  <h3>Sistemi posizionali</h3>
-  <ul>
-    <li><strong>Binario (base 2)</strong>: solo 0 e 1</li>
-    <li><strong>Ottale (base 8)</strong>: cifre da 0 a 7</li>
-    <li><strong>Esadecimale (base 16)</strong>: cifre da 0 a 9 e lettere da A a F</li>
-  </ul>
+<h3>Sistemi posizionali</h3>
+<ul>
+  <li><strong>Binario (base 2)</strong>: cifre 0 e 1.</li>
+  <li><strong>Ottale (base 8)</strong>: cifre da 0 a 7.</li>
+  <li><strong>Esadecimale (base 16)</strong>: cifre da 0 a 9 e lettere da A a F. Più compatto del binario, spesso usato in informatica (es. colore <code>#FF00FF</code>).</li>
+</ul>
 
-  <img src="codifica numeri.jpeg" alt="Codifica numerica"> <img src="codifica numeri2.jpeg" alt="Sistemi posizionali"><br>
-  <a href="#CAPITOLO3">Torna a CAPITOLO 3</a><br>
+<img src="codifica numeri.jpeg" alt="Codifica numerica"> <img src="codifica numeri2.jpeg" alt="Sistemi posizionali"><br>
+<a href="#CAPITOLO3">Torna a CAPITOLO 3</a><br>
 
 </body>
 </html>
