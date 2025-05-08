@@ -166,9 +166,9 @@ Uno dei pericoli più comuni in rete sono i virus o il phishing. Il phishing è 
 	<br>
 Infine, uno degli aspetti più importanti del viaggiare consapevolmente in rete è sapere quanto tempo trascorri online. Passare troppo tempo sui social o davanti a uno schermo può farti sentire stanco o ansioso. Cerca di trovare un buon equilibrio tra il tempo che passi online e quello che dedichi ad altre attività, come leggere un libro o fare sport.</h3> <br>
  <img src="CONSAPEVOLE.JPEG"><img src="CONSAPEVOLE2.JPEG"><img src="CONSAPEVOLE3.JPEG"> <BR>
-<a href="#CAPITOLO 1">torna a capitolo 1 </a> <br> 
+<button onclick="location.href="#CAPITOLO 1">torna all'inizio del capito</button>
  
-<a href="capitolo 2.html"> vai alla pagina capitolo 2 </a><br>
+<button onclick="location.href="capitolo 2.html">Vai al capitolo 2</button>
 <style>
 	table {
 		border-style: solid;
@@ -343,35 +343,21 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
-a[href="copertina.html"],
-a[href="capitolo 1.html"],
-a[href="capitolo 2.html"],
-a[href="capitolo3.html"],
-a[href="Capitolo 4.html"],
-a[href="Capitolo5.html"] {
-    display: block;
-    text-align: center;
+button {
+    display: inline-block;
     background-color: #004d99;
     color: white;
-    padding: 15px;
-    margin-top: 30px;
-    border-radius: 5px;
-    font-size: 18px;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    transition: background-color 0.3s ease;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-a[href="copertina.html"]:hover,
-a[href="capitolo 1.html"]:hover,
-a[href="capitolo 2.html"]:hover,
-a[href="capitolo3.html"]:hover,
-a[href="Capitolo 4.html"]:hover,
-a[href="capitolo 5.html"]:hover {
-    background-color: #003366;
-}
+
 
 br {
     margin-bottom: 10px;
